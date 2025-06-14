@@ -99,7 +99,7 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
    int resultado1;
    int resultado2;
 
-    printf("Escolha dois atributos a serem comparados:\n");
+    printf("Escolha dois atributos a serem comparados\n");
     printf("1. População\n");
     printf("2. Área\n");
     printf("3. PIB\n");
