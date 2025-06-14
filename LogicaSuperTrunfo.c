@@ -92,26 +92,6 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
        float superporder2 = (float) populacao2 + area2 + PIB2 + turismo2 + pibpercapita2 - densidade2; 
 
 
-    // Comparação entre as cartas
-
-    printf("Carta de %s - (%s) X Carta de %s - (%s)\n", nome, codigo, nome2, codigo2);
- 
-    printf("Carta de %s vencedora resultado = 1, Carta de %s vencedora resultado = 0\n", nome, nome2);
-
-    printf("População: %d\n", populacao > populacao2);
-
-    printf("Área: %d\n", area > area2);
-
-    printf("PIB: %d\n", PIB > PIB2);
-
-    printf("Pontos turísticos : %d\n", turismo > turismo2);
-
-    printf("PIB per capita: %d\n", pibpercapita1 > pibpercapita2);
-
-    printf("Densidade populacional : %d\n", densidade1 < densidade2);
-
-    printf("SUPER PODER: %d \n", superporder1 > superporder2);
-
    // Comparação das cartas usando lógica
 
    int comparacao;
