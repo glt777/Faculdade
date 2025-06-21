@@ -68,7 +68,7 @@ int main(){
     MR(8);
 
   // Cavalo com loops complexos
-
+  printf("MOVIMENTO DO CAVALO\n");
   for(c1=1, c2=2;  c2>=c1; c1++){
         printf("Cavalo andou para cima\n");
         if(c2==c1){
