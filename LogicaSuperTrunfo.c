@@ -99,7 +99,7 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
    int resultado1;
    int resultado2;
 
-    printf("Escolha dois atributos a serem comparados\n");
+    printf("Escolha dois atributos a serem comparados:\n");
     printf("1. População\n");
     printf("2. Área\n");
     printf("3. PIB\n");
@@ -163,12 +163,15 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
 
        // SEGUNDO ATRIBUTO
 
-       printf("Escolha o segundo atributo a ser comparado: ");
-       scanf("%d", &comparacao2);
-       if(comparacao2 == comparacao){
+       do{
+        printf("Escolha o segundo atributo a ser comparado: ");
+        scanf("%d", &comparacao2);
+        if(comparacao == comparacao2){
         printf("Você escolheu o mesmo atributo!");
-       } else {
-           switch(comparacao2){
+       }
+       } while (comparacao2 == comparacao);
+       
+       switch(comparacao2){
         case 1: 
         printf("Atributo escolhido: População!\n");
         printf("População de %s: %u X População de %s: %u \n", nome, populacao, nome2, populacao2);
@@ -217,14 +220,16 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
        
        }
 
-      }
       
+      
+
+      //VENCEDOR
       if(resultado1 == resultado2 && resultado1 == 0 && resultado2 == 0){
-        printf("%s venceu!", nome2);
+        printf("%s Venceu!", nome2);
       } else if (resultado1 != resultado2){
         printf("Empate!");
       } else {
-        printf("%s venceu!", nome);
+        printf("%s Venceu!", nome);
       }
         
       
