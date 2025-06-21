@@ -20,7 +20,7 @@ int main(){
     scanf("%s", nome);
 
     printf("População: \n");
-    scanf("%u", &populacao);
+    scanf("%lu", &populacao);
 
     printf("Área: \n");
     scanf("%f", &area);
@@ -48,7 +48,7 @@ int main(){
     scanf("%s", nome2);
 
     printf("População: \n");
-    scanf("%u", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Área: \n");
     scanf("%f", &area2);
@@ -68,7 +68,7 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
     printf("Estado: %c\n", estado);
     printf("Código: %s\n", codigo);
     printf("Nome da cidade: %s\n", nome);
-    printf("População: %u pessoas\n", populacao);
+    printf("População: %lu pessoas\n", populacao);
     printf("Área: %.3f km²\n", area);
     printf("PIB: R$ %.3f \n", PIB);
     printf("Quantidade de pontos turísticos: %d \n", turismo);
@@ -80,7 +80,7 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da cidade: %s\n", nome2);
-    printf("População: %u pessoas\n", populacao2);
+    printf("População: %lu pessoas\n", populacao2);
     printf("Área: %.3f km²\n", area2);
     printf("PIB: R$ %.3f\n", PIB2);
     printf("Quantidade de pontos turísticos: %d\n", turismo2);
@@ -115,7 +115,7 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
     switch(comparacao){
         case 1: 
         printf("Atributo escolhido: População!\n");
-        printf("População de %s: %u X População de %s: %u \n", nome, populacao, nome2, populacao2);
+        printf("População de %s: %lu X População de %s: %lu \n", nome, populacao, nome2, populacao2);
         resultado1 = populacao > populacao2 ? 1 : 0;
         break;
         case 2: 
@@ -174,7 +174,7 @@ float densidade1 = (float) populacao / area, densidade2 = (float) populacao2 / a
        switch(comparacao2){
         case 1: 
         printf("Atributo escolhido: População!\n");
-        printf("População de %s: %u X População de %s: %u \n", nome, populacao, nome2, populacao2);
+        printf("População de %s: %lu X População de %s: %lu \n", nome, populacao, nome2, populacao2);
         resultado2 = populacao > populacao2 ? 1 : 0;
         break;
         case 2: 
