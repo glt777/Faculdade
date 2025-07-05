@@ -50,7 +50,7 @@ int main(){
   
 
   // bispo com recursividade e loops aninhados
-    
+   printf("MOVIMENTO DO BISPO\n");    
   for(bv = 0; bv < 1; bv++){
     for(bh = 0; bh < 1; bh++){
       MB(5);
